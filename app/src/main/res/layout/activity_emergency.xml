@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activitys.EmergencyActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:id="@+id/emergencyicon"
+            android:src="@drawable/blood">
+        </ImageView>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/emergencytxt"
+            android:layout_below="@+id/emergencyicon"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center|left"
+            android:textStyle="bold"
+            android:text=" Call Directly :"
+            android:textColor="@color/blackcolor"
+            android:textSize="@dimen/headingtext"
+            ></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/emergencypho"
+            android:layout_below="@+id/emergencytxt"
+            android:drawableLeft="@drawable/iconphone"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/spinner"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center|left"
+            android:drawablePadding="10dp"
+            android:paddingLeft="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/blackcolor"
+            android:textSize="@dimen/headingtext"
+            ></TextView>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/emergencypho1"
+            android:layout_below="@+id/emergencypho"
+            android:drawableLeft="@drawable/iconphone"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/spinner"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center|left"
+            android:drawablePadding="10dp"
+            android:paddingLeft="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/blackcolor"
+            android:textSize="@dimen/headingtext"
+            ></TextView>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/emergencytxt1"
+            android:layout_below="@+id/emergencypho1"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center|left"
+            android:textStyle="bold"
+            android:text="SEND SMS :"
+            android:textColor="@color/blackcolor"
+            android:textSize="@dimen/headingtext"
+            ></TextView>
+
+
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/emergencytxtname"
+            android:layout_below="@+id/emergencytxt1"
+            android:drawableLeft="@drawable/iconaccount"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/spinner"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center|left"
+            android:drawablePadding="10dp"
+            android:paddingLeft="10dp"
+            android:hint="Enter Name"
+            android:textColorHint="@color/blackcolor"
+            android:textColor="@color/blackcolor"
+            android:textSize="@dimen/headingtext"
+            android:fontFamily="sans-serif-condensed-medium"
+            ></EditText>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/emergencytxtmobile"
+            android:layout_below="@+id/emergencytxtname"
+            android:drawableLeft="@drawable/iconphone"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/spinner"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center|left"
+            android:drawablePadding="10dp"
+            android:paddingLeft="10dp"
+            android:textColor="@color/blackcolor"
+            android:textSize="@dimen/headingtext"
+            android:inputType="number"
+            android:maxLength="10"
+            android:hint="Enter Mobile Number"
+            android:textColorHint="@color/blackcolor"
+            android:fontFamily="sans-serif-condensed-medium"
+            ></EditText>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/emergencytxtmobile1"
+            android:layout_below="@+id/emergencytxtmobile"
+            android:drawableLeft="@drawable/iconphone"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/spinner"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center|left"
+            android:drawablePadding="10dp"
+            android:paddingLeft="10dp"
+            android:textColor="@color/blackcolor"
+            android:textSize="@dimen/headingtext"
+            android:inputType="number"
+            android:maxLength="10"
+            android:hint="Enter Alternative Number"
+            android:textColorHint="@color/blackcolor"
+            android:fontFamily="sans-serif-condensed-medium"
+            ></EditText>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/emergencytxtsms"
+            android:layout_below="@+id/emergencytxtmobile1"
+            android:drawableLeft="@drawable/iconemail"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/spinner"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center|left"
+            android:drawablePadding="10dp"
+            android:paddingLeft="10dp"
+            android:textColor="@color/blackcolor"
+            android:textSize="@dimen/headingtext"
+            android:hint="Enter Message"
+            android:textColorHint="@color/blackcolor"
+            android:fontFamily="sans-serif-condensed-medium"
+            ></EditText>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/emergencybtnsms"
+            android:text="@string/emergencybtn"
+            android:layout_below="@+id/emergencytxtsms"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/whitecolor"
+            android:layout_marginBottom="25dp"
+            />
+
+    </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

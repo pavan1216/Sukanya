@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activitys.DonorInformartionActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/donorinformation"
+                    android:text="DONOR INFORMATION"
+                    android:layout_marginTop="20dp"
+                    android:layout_alignParentTop="true"
+                    android:gravity="center"
+                    android:textColor="@color/blackcolor"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    >
+                </TextView>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/donorinforname"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/blackcolor"
+                    android:layout_below="@+id/donorinformation"
+                    android:background="@drawable/spinner"
+                    android:gravity="center|left"
+                    android:paddingLeft="10dp"
+                    android:drawablePadding="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:drawableLeft="@drawable/iconaccount"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    >
+                </TextView>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/donorinforgroup"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/blackcolor"
+                    android:layout_below="@+id/donorinforname"
+                    android:background="@drawable/spinner"
+                    android:gravity="center|left"
+                    android:paddingLeft="10dp"
+                    android:drawablePadding="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:drawableLeft="@drawable/hospital_black_24dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    >
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/donorinforgender"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/blackcolor"
+                    android:layout_below="@+id/donorinforgroup"
+                    android:background="@drawable/spinner"
+                    android:gravity="center|left"
+                    android:paddingLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:drawablePadding="10dp"
+                    android:drawableLeft="@drawable/gender"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    >
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/donorinfornumber"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/blackcolor"
+                    android:layout_below="@+id/donorinforgender"
+                    android:background="@drawable/spinner"
+                    android:gravity="center|left"
+                    android:paddingLeft="10dp"
+                    android:drawablePadding="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:drawableLeft="@drawable/iconphone"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    >
+                </TextView>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/donorinforemail"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/blackcolor"
+                    android:layout_below="@+id/donorinfornumber"
+                    android:background="@drawable/spinner"
+                    android:gravity="center|left"
+                    android:paddingLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:drawablePadding="10dp"
+                    android:drawableLeft="@drawable/iconemail"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    >
+                </TextView>
+
+
+
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sendsms"
+                    android:text="Send SMS"
+                    android:textColor="@color/whitecolor"
+                    android:background="@color/textviewcolor"
+                    android:padding="20dp"
+                    android:layout_below="@+id/donorinforemail"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp">
+
+                </Button>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

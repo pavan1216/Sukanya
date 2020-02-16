@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">Lifes Savers</string>
+
+    <string name="username"> UserName</string>
+    <string name="password"> Password</string>
+    <string name="logintxt"> Login</string>
+    <string name="forgotpassword"> Forgot Password</string>
+    <string name="signup"> "Don't Have Account Sign Up ?"</string>
+
+    <string name="emergency"> "Emergency Contact"</string>
+    <string name="emergencybtn"> "SEND SMS"</string>
+    <string name="title_activity_forgot_password"> ForgotPasswordActivity</string>
+
+
+    <string name="entermobile"> Enter Mobile Number</string>
+    <string name="enterotp"> Enter Mobile Number</string>
+    <string name="Submit"> Submit</string>
+    <string name="signup1">Start Payment</string>
+    <string name="logintoaccount"> Login To Account</string>
+    <string name="title_activity_register"> RegisterActivity</string>
+
+
+    <string name="regname"> Name</string>
+    <string name="regmobile"> Mobile Number</string>
+    <string name="regemail"> Email</string>
+    <string name="regpassword"> Password</string>
+    <string name="conformregpassword">Confirm Password</string>
+    <string name="regconformpassword"> confirm Password</string>
+    <string name="rbmale"> Male</string>
+    <string name="rbfemale"> Female</string>
+    <string name="bod"> Date Of Birth</string>
+    <string name="address">Office Address</string>
+    <string name="send_my_loc">Send My Location</string>
+    <string name="regusername">UserName</string>
+    <string name="registerbtn">Register</string>
+    <string name="title_activity_navigation">Blood Groups</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_home1">HOME</string>
+    <string name="menu_home">PROFILE</string>
+    <string name="menu_gallery">EDIT PROFILE</string>
+    <string name="menu_slideshow">CHANGE PASSWORD</string>
+    <string name="menu_tools">POST BLOOD REQUEST</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+
+    <string name="error_invalid_user">Invalid User Name Or Password...!</string>
+    <string name="searchbtn">Submit</string>
+
+    <string name="updateprofile">Update Profile</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="dialog_alert_permission">This app need location to work without any problem. Please grant permissions.</string>
+    <string name="dialog_navigate_setting">You have denied some permission. Allow all permissions at [Settings] > [Permissions]</string>
+    <string name="grant">Grant</string>
+    <string name="cancel">Cancel</string>
+    <string name="exit_app">Exit Life Savers</string>
+
+</resources>

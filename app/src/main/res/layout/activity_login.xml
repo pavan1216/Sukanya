@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/textviewcolor"
+    tools:context=".Activitys.LoginActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/usertxt"
+                    android:hint="@string/username"
+                    android:drawableLeft="@drawable/iconaccount"
+                    android:paddingLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:drawablePadding="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="60dp"
+                    android:singleLine="true"
+                    android:textColorHint="@color/blackcolor"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:background="@drawable/spinner"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/passtxt"
+                    android:layout_below="@+id/usertxt"
+                    android:hint="@string/password"
+                    android:layout_marginTop="20dp"
+                    android:paddingLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:drawablePadding="10dp"
+                    android:inputType="textPassword"
+                    android:textColorHint="@color/blackcolor"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:drawableLeft="@drawable/iconlock"
+                    android:background="@drawable/spinner"/>
+
+                <Button
+                    android:id="@+id/btnlogin"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="@string/logintxt"
+                    android:layout_below="@+id/passtxt"
+                    android:background="@color/textviewcolor"
+                    android:textColor="@color/whitecolor"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:layout_marginTop="20dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/forgottv"
+                    android:text="@string/forgotpassword"
+                    android:layout_below="@+id/btnlogin"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:layout_marginTop="10dp"
+                    android:textSize="@dimen/headingtext"
+                    android:textColor="@color/textviewcolor"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/signuptv"
+                    android:text="@string/signup"
+                    android:layout_below="@+id/forgottv"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:layout_marginTop="10dp"
+                    android:textSize="@dimen/headingtext"
+                    android:textColor="@color/textviewcolor"
+                    android:layout_marginBottom="20dp"
+                    />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

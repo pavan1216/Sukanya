@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activitys.AddressActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="15dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/blood"
+                android:id="@+id/imageaddress"
+                android:layout_marginTop="10dp">
+            </ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageaddress"
+                android:layout_marginTop="10dp"
+                android:text="Address :"
+                android:textColor="@color/blackcolor"
+               android:layout_marginLeft="10dp"
+                android:textSize="20sp"
+                android:id="@+id/address"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/address"
+                android:layout_marginTop="10dp"
+                android:text="Lifessaver Guntur All Over India"
+                android:textColor="@color/blackcolor"
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp"
+                android:id="@+id/address1"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/address1"
+                android:layout_marginTop="10dp"
+                android:text="Contact Number :"
+                android:textColor="@color/blackcolor"
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp"
+                android:id="@+id/addresscontact"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/addresscontact"
+                android:layout_marginTop="10dp"
+                android:text="+91-8790160741"
+                android:textColor="@color/blackcolor"
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp"
+                android:id="@+id/addresscontact1"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/addresscontact1"
+                android:layout_marginTop="10dp"
+                android:text="+91-6300912687"
+                android:textColor="@color/blackcolor"
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp"
+                android:id="@+id/addresscontact2"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/addresscontact2"
+                android:layout_marginTop="10dp"
+                android:text="Email :"
+                android:textColor="@color/blackcolor"
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp"
+                android:id="@+id/addressemail"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/addressemail"
+                android:layout_marginTop="10dp"
+                android:text="info@lifessaver.com"
+                android:textColor="@color/blackcolor"
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp"
+                android:id="@+id/addressemailinfo"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/addressemailinfo"
+                android:layout_marginTop="10dp"
+                android:text="contact@lifessaver.com"
+                android:textColor="@color/blackcolor"
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp"
+                android:id="@+id/addressemailcontact"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/textviewcolor"
+    tools:context=".Activitys.RegisterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/regnametxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/spinner"
+                    android:drawableLeft="@drawable/iconaccount"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:hint="@string/regname"
+                    android:paddingLeft="10dp"
+                    android:textColorHint="@color/blackcolor"
+                    android:textSize="@dimen/defaultext"
+
+
+                    />
+
+
+                <Spinner
+                    android:id="@+id/booldgroupspinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/regnametxt"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:dropDownSelector="@color/colorPrimaryDark"
+                    android:spinnerMode="dialog"></Spinner>
+
+                <View
+                    android:id="@+id/jepview1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/booldgroupspinner"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/colorPrimaryDark"></View>
+
+                <Spinner
+                    android:id="@+id/gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/jepview1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:dropDownSelector="@color/colorPrimaryDark"
+                    android:spinnerMode="dialog"
+
+                    ></Spinner>
+
+                <View
+                    android:id="@+id/jepview2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/gender"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/colorPrimaryDark"></View>
+
+
+                <TextView
+                    android:id="@+id/in_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/gender"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/spinner"
+                    android:drawableLeft="@drawable/ic_date_range_black_24dp"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:gravity="center|left"
+                    android:hint="Date Of Birth"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/blackcolor"
+                    android:textColorHint="@color/blackcolor"
+                    android:textSize="@dimen/defaultext" />
+
+
+                <EditText
+                    android:id="@+id/regmobiletxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/in_date"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/spinner"
+                    android:drawableLeft="@drawable/iconphone"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:hint="@string/regmobile"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:paddingLeft="10dp"
+                    android:textColorHint="@color/blackcolor"
+                    android:textSize="@dimen/defaultext" />
+
+                <EditText
+                    android:id="@+id/regemailtxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/regmobiletxt"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/spinner"
+                    android:drawableLeft="@drawable/iconemail"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:hint="@string/regemail"
+                    android:paddingLeft="10dp"
+                    android:textColorHint="@color/blackcolor"
+                    android:textSize="@dimen/defaultext" />
+
+
+                <Spinner
+                    android:id="@+id/country"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/regemailtxt"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:dropDownSelector="@color/colorPrimaryDark"
+                    android:spinnerMode="dialog"></Spinner>
+
+                <View
+                    android:id="@+id/jepview3"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/country"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/colorPrimaryDark"></View>
+
+
+                <Spinner
+                    android:id="@+id/state"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/jepview3"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:dropDownSelector="@color/colorPrimaryDark"
+                    android:spinnerMode="dialog"></Spinner>
+
+                <View
+                    android:id="@+id/jepview4"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/state"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/colorPrimaryDark"></View>
+
+
+                <Spinner
+                    android:id="@+id/district"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/jepview4"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:dropDownSelector="@color/colorPrimaryDark"
+                    android:spinnerMode="dialog"></Spinner>
+
+                <View
+                    android:id="@+id/jepview5"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/district"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/colorPrimaryDark"></View>
+
+
+                <Spinner
+                    android:id="@+id/city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/district"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:dropDownSelector="@color/colorPrimaryDark"
+                    android:spinnerMode="dialog"></Spinner>
+
+                <View
+                    android:id="@+id/jepview6"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/city"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/colorPrimaryDark"></View>
+
+                <EditText
+                    android:id="@+id/regaddresstxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/jepview6"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/spinner"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:hint="@string/address"
+                    android:paddingLeft="10dp"
+                    android:textColorHint="@color/blackcolor"
+                    android:textSize="@dimen/defaultext" />
+
+
+                <EditText
+                    android:id="@+id/regusername"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/regaddresstxt"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/spinner"
+                    android:drawableLeft="@drawable/iconaccount"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:hint="@string/regusername"
+                    android:paddingLeft="10dp"
+                    android:textColorHint="@color/blackcolor"
+                    android:textSize="@dimen/defaultext" />
+
+                <EditText
+                    android:id="@+id/regpasstxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/regusername"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/spinner"
+                    android:drawableLeft="@drawable/iconlock"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:hint="@string/regpassword"
+                    android:inputType="textPassword"
+                    android:paddingLeft="10dp"
+                    android:textColorHint="@color/blackcolor"
+                    android:textSize="@dimen/defaultext" />
+
+                <EditText
+                    android:id="@+id/regconpasstxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/regpasstxt"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/spinner"
+                    android:drawableLeft="@drawable/iconlock"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:hint="@string/conformregpassword"
+                    android:inputType="textPassword"
+                    android:paddingLeft="10dp"
+                    android:textColorHint="@color/blackcolor"
+                    android:textSize="@dimen/defaultext" />
+
+
+                <Button
+                    android:id="@+id/registerbtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/regconpasstxt"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="35dp"
+                    android:background="@color/textviewcolor"
+                    android:text="@string/registerbtn"
+                    android:textColor="@color/whitecolor"
+
+                    />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

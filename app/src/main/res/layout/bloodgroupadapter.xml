@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    >
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/cpimagerelative"
+            android:layout_marginTop="5dp"
+            card_view:cardBackgroundColor="@color/whitecolor"
+            card_view:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="150dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/blood"
+                    android:id="@+id/bloodimages"/>
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/bloodgroupname"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/blackcolor"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/bloodimages"
+                    android:layout_marginBottom="10dp"
+                    android:padding="10dp"
+                    />
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/textviewcolor"
+    tools:context=".Activitys.ViewProfileActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/tvbloodgroup"
+                    android:text="Blood Group :"
+                    android:gravity="center|left"
+                    android:layout_marginLeft="10dp"
+                    android:paddingLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:background="@drawable/spinner"
+                    android:layout_marginTop="30dp"
+                    android:textColor="@color/blackcolor"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/tvusername"
+                    android:layout_below="@+id/tvbloodgroup"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:background="@drawable/spinner"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center|left"
+                    android:layout_marginLeft="10dp"
+                    android:paddingLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/blackcolor"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/tvgender"
+                    android:layout_below="@+id/tvusername"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:background="@drawable/spinner"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center|left"
+                    android:layout_marginLeft="10dp"
+                    android:paddingLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/blackcolor"
+
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/tvage"
+                    android:layout_below="@+id/tvgender"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:background="@drawable/spinner"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center|left"
+                    android:layout_marginLeft="10dp"
+                    android:paddingLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/blackcolor"
+
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/tvdob"
+                    android:layout_below="@+id/tvage"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:background="@drawable/spinner"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center|left"
+                    android:layout_marginLeft="10dp"
+                    android:paddingLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/blackcolor"
+
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/tvcontactnumber"
+                    android:layout_below="@+id/tvdob"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:background="@drawable/spinner"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center|left"
+                    android:layout_marginLeft="10dp"
+                    android:paddingLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/blackcolor"
+
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/tvemail"
+                    android:layout_below="@+id/tvdob"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:background="@drawable/spinner"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center|left"
+                    android:layout_marginLeft="10dp"
+                    android:paddingLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/blackcolor"
+
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/tvaddress"
+                    android:layout_below="@+id/tvemail"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:background="@drawable/spinner"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center|left"
+                    android:layout_marginLeft="10dp"
+                    android:paddingLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/blackcolor"
+
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/tvcountry"
+                    android:layout_below="@+id/tvaddress"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:background="@drawable/spinner"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center|left"
+                    android:layout_marginLeft="10dp"
+                    android:paddingLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/blackcolor"
+
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/tvstate"
+                    android:layout_below="@+id/tvcountry"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:background="@drawable/spinner"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center|left"
+                    android:layout_marginLeft="10dp"
+                    android:paddingLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/blackcolor"
+
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/tvdistrict"
+                    android:layout_below="@+id/tvstate"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:background="@drawable/spinner"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center|left"
+                    android:layout_marginLeft="10dp"
+                    android:paddingLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/blackcolor"
+
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/tvcity"
+                    android:layout_below="@+id/tvdistrict"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:background="@drawable/spinner"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center|left"
+                    android:layout_marginLeft="10dp"
+                    android:paddingLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:textColor="@color/blackcolor"
+
+                    />
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

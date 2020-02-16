@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cpimagerelative"
+        android:layout_marginTop="5dp"
+        card_view:cardBackgroundColor="@color/whitecolor"
+        card_view:cardUseCompatPadding="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/blood"
+                android:id="@+id/donorbloodimages"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/blooddonorname"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textColor="@color/blackcolor"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:textSize="@dimen/headingtext"
+                android:textStyle="bold"
+                android:layout_toRightOf="@+id/donorbloodimages"
+
+                />
+
+            <TextView
+                android:id="@+id/blooddonorgroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/blooddonorname"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textColor="@color/blackcolor"
+                android:textStyle="bold"
+                android:textSize="@dimen/headingtext"
+                android:layout_toRightOf="@+id/donorbloodimages"
+
+
+                />
+
+
+            <TextView
+                android:id="@+id/blooddonorcontact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/blooddonorgroup"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textColor="@color/blackcolor"
+                android:textStyle="bold"
+                android:textSize="@dimen/headingtext"
+                android:layout_toRightOf="@+id/donorbloodimages"
+                android:layout_marginBottom="10dp"
+
+                />
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/textviewcolor"
+    tools:context=".Activitys.UpdateProfileActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/updateregnametxt"
+                    android:hint="@string/regname"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="30dp"
+                    android:drawableLeft="@drawable/iconaccount"
+                    android:drawablePadding="10dp"
+                    android:textSize="@dimen/defaultext"
+                    android:background="@drawable/spinner"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    />
+
+
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/updatebooldgroupspinner"
+                    android:layout_below="@+id/updateregnametxt"
+                    android:spinnerMode="dialog"
+                    android:dropDownSelector="@color/colorPrimaryDark"
+                    android:backgroundTint="@color/colorPrimary"
+                    ></Spinner>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:layout_below="@+id/updatebooldgroupspinner"
+                    android:id="@+id/updateview1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    ></View>
+
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/updategender"
+                    android:layout_below="@+id/updateview1"
+                    android:spinnerMode="dialog"
+                    android:dropDownSelector="@color/colorPrimaryDark"
+                    android:backgroundTint="@color/colorPrimary"
+
+                    ></Spinner>
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:layout_below="@+id/updategender"
+                    android:id="@+id/updateview2"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    ></View>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/updatein_date"
+                    android:hint="Date Of Birth"
+                    android:background="@drawable/spinner"
+                    android:layout_below="@+id/updateview2"
+                    android:gravity="center|left"
+                    android:paddingLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/blackcolor"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:drawablePadding="10dp"
+                    android:textSize="@dimen/defaultext"
+                    android:drawableLeft="@drawable/ic_date_range_black_24dp"
+                    />
+
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/updateregmobiletxt"
+                    android:layout_below="@+id/updatein_date"
+                    android:hint="@string/regmobile"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:maxLength="10"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:drawableLeft="@drawable/iconphone"
+                    android:drawablePadding="10dp"
+                    android:textSize="@dimen/defaultext"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:background="@drawable/spinner"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/updateregemailtxt"
+                    android:layout_below="@+id/updateregmobiletxt"
+                    android:hint="@string/regemail"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:drawableLeft="@drawable/iconemail"
+                    android:drawablePadding="10dp"
+                    android:textSize="@dimen/defaultext"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:background="@drawable/spinner"/>
+
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/updatecountry"
+                    android:layout_below="@+id/updateregemailtxt"
+                    android:dropDownSelector="@color/colorPrimaryDark"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:spinnerMode="dialog"
+                    ></Spinner>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:layout_below="@+id/updatecountry"
+                    android:id="@+id/updateview3"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    ></View>
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/updatestate"
+                    android:layout_below="@+id/updateview3"
+                    android:dropDownSelector="@color/colorPrimaryDark"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:spinnerMode="dialog"
+                    ></Spinner>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:layout_below="@+id/updatestate"
+                    android:id="@+id/updateview4"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    ></View>
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/updatedistrict"
+                    android:layout_below="@+id/updateview4"
+                    android:dropDownSelector="@color/colorPrimaryDark"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:spinnerMode="dialog"
+                    ></Spinner>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:layout_below="@+id/updatedistrict"
+                    android:id="@+id/updateview5"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    ></View>
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/updatecity"
+                    android:layout_below="@+id/updateview5"
+                    android:dropDownSelector="@color/colorPrimaryDark"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:spinnerMode="dialog"
+                    ></Spinner>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:layout_below="@+id/updatecity"
+                    android:id="@+id/updateview6"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    ></View>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/updateregaddresstxt"
+                    android:layout_below="@+id/updateview6"
+                    android:hint="@string/address"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="@dimen/defaultext"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:background="@drawable/spinner"/>
+
+
+
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/updateregisterbtn"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/updateprofile"
+                    android:textColor="@color/whitecolor"
+                    android:background="@color/textviewcolor"
+                    android:layout_below="@+id/updateregaddresstxt"
+                    android:layout_marginBottom="30dp"
+
+                    />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

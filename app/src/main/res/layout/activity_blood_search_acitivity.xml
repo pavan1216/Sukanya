@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activitys.BloodSearchAcitivity">
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+
+            <Spinner
+                android:id="@+id/searchcountry"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="20dp"
+                android:spinnerMode="dialog"
+                android:dropDownSelector="@color/colorPrimaryDark"
+                android:backgroundTint="@color/colorPrimary"
+                >
+
+            </Spinner>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimaryDark"
+                android:layout_below="@+id/searchcountry"
+                android:id="@+id/bloodserachview"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                ></View>
+
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/searchstate"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/bloodserachview"
+                android:spinnerMode="dialog"
+                android:dropDownSelector="@color/colorPrimaryDark"
+                android:backgroundTint="@color/colorPrimary"
+               >
+
+            </Spinner>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimaryDark"
+                android:layout_below="@+id/searchstate"
+                android:id="@+id/bloodserachview1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                ></View>
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/searchdistrict"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/searchstate"
+                android:spinnerMode="dialog"
+                android:dropDownSelector="@color/colorPrimaryDark"
+                android:backgroundTint="@color/colorPrimary"
+               >
+
+            </Spinner>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimaryDark"
+                android:layout_below="@+id/searchdistrict"
+                android:id="@+id/bloodserachview2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                ></View>
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/searchcity"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/searchdistrict"
+                android:dropDownSelector="@color/colorPrimaryDark"
+                android:backgroundTint="@color/colorPrimary"
+              >
+
+            </Spinner>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimaryDark"
+                android:layout_below="@+id/searchcity"
+                android:id="@+id/bloodserachview3"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                ></View>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/searchbtn"
+                android:text="@string/searchbtn"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@color/textviewcolor"
+                android:textColor="@color/whitecolor"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_below="@+id/bloodserachview3"/>
+        </RelativeLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

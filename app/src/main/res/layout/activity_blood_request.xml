@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activitys.BloodRequestActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/reqpatientname"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:drawablePadding="10dp"
+                android:layout_marginTop="30dp"
+                android:hint="Enter Patient Name"
+                android:paddingLeft="10dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:background="@drawable/spinner"
+                android:textSize="@dimen/defaultext"
+                android:textColorHint="@color/blackcolor"
+                android:drawableLeft="@drawable/iconaccount">
+
+            </EditText>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/reqbloodspinner"
+                android:layout_below="@+id/reqpatientname"
+                android:spinnerMode="dialog"
+                android:dropDownSelector="@color/colorPrimaryDark"
+                android:backgroundTint="@color/colorPrimary"
+                ></Spinner>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimaryDark"
+                android:layout_below="@+id/reqbloodspinner"
+                android:id="@+id/reqview5"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+
+                ></View>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/reqin_date"
+                android:hint="Date Of Need Blood"
+                android:background="@drawable/spinner"
+                android:layout_below="@+id/reqview5"
+                android:gravity="center|left"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:drawablePadding="10dp"
+                android:textColor="@color/blackcolor"
+                android:textSize="@dimen/defaultext"
+                android:textColorHint="@color/blackcolor"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:drawableLeft="@drawable/ic_date_range_black_24dp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/reqcontactnumber"
+                android:layout_below="@+id/reqin_date"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:drawablePadding="10dp"
+                android:layout_marginTop="10dp"
+                android:hint="Enter Contact Number"
+                android:paddingLeft="10dp"
+                android:maxLength="10"
+                android:textSize="@dimen/defaultext"
+                android:inputType="number"
+                android:textColorHint="@color/blackcolor"
+                android:background="@drawable/spinner"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:drawableLeft="@drawable/iconphone">
+
+            </EditText>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/reqemail"
+                android:layout_below="@+id/reqcontactnumber"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:drawablePadding="10dp"
+                android:layout_marginTop="10dp"
+                android:hint="Enter Email ID"
+                android:paddingLeft="10dp"
+                android:textSize="@dimen/defaultext"
+                android:textColorHint="@color/blackcolor"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:background="@drawable/spinner"
+                android:drawableLeft="@drawable/iconemail">
+
+            </EditText>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/reqmessage"
+                android:layout_below="@+id/reqemail"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:drawablePadding="10dp"
+                android:layout_marginTop="10dp"
+                android:hint="Enter Message"
+                 android:paddingLeft="10dp"
+                android:textSize="@dimen/defaultext"
+                android:textColorHint="@color/blackcolor"
+                android:background="@drawable/spinner"
+                android:drawableLeft="@drawable/iconemail"
+                android:fontFamily="sans-serif-condensed-medium"
+                >
+            </EditText>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/reqbtn"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="SUBMIT"
+                android:textColor="@color/whitecolor"
+                android:background="@color/textviewcolor"
+                android:layout_below="@+id/reqmessage"
+                android:layout_marginBottom="50dp"
+
+                />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
